@@ -1,0 +1,20 @@
+{
+  "name": "p3_hammoum_bryan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass style.scss style.css",
+    "sass:watch": "sass --watch style.scss style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BryanYanice/P3_HAMMOUM_Bryan.git"
+  },
+  "author": "HAMMOUM Bryan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BryanYanice/P3_HAMMOUM_Bryan/issues"
+  },
+  "homepage": "https://github.com/BryanYanice/P3_HAMMOUM_Bryan#readme"
+}
