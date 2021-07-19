@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #F6F6F6;
 }
@@ -16,8 +20,8 @@ header {
 
 .titles {
   font-family: "Shrikhand", cursif;
-  font-size: 1.6rem;
-  padding-top: 1.4rem;
+  font-size: 1.9rem;
+  padding-top: 12px;
   display: flex;
   justify-content: center;
 }
@@ -35,7 +39,7 @@ header {
   font-size: 0.75rem;
 }
 
-.fas .fa-map-marker-alt {
+.fas.fa-map-marker-alt {
   font-size: 1rem;
 }
 
@@ -70,7 +74,7 @@ header {
   border-radius: 30PX;
   background: #f184dc;
   background: linear-gradient(174deg, #f184dc 0%, #b05fdb 100%);
-  box-shadow: 0px 5px 20px 0px #9c9c9c;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .operation {
@@ -87,7 +91,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   margin-top: 30px;
-  margin-bottom: 70px;
+  margin-bottom: 45px;
 }
 .operation_btn {
   font-size: 1rem;
@@ -96,11 +100,8 @@ header {
   border: none;
   margin-left: 35px;
   margin-right: 20px;
-  border-radius: 20px;
-}
-.operation_menu {
-  margin-top: 25px;
   margin-bottom: 25px;
+  border-radius: 20px;
 }
 
 .restaurant {

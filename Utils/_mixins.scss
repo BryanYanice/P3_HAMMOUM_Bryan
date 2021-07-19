@@ -6,8 +6,8 @@
 
 @mixin title-Shrikhand {
     font-family: 'Shrikhand', cursif;
-    font-size: 1.6rem;
-    padding-top: 1.4rem;
+    font-size: 1.9rem;
+    padding-top: 12px;
     display: flex;
     justify-content: center;
 }
@@ -26,5 +26,5 @@
     border-radius: 30PX;
     background: rgb(241,132,220);
     background: linear-gradient(174deg, rgba(241,132,220,1) 0%, rgba(176,95,219,1) 100%);
-    box-shadow: 0px 5px 20px 0px rgb(156, 156, 156);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
