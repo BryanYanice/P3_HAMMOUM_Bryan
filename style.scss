@@ -26,44 +26,64 @@ header {
 
 .position {
     width: 100%;
-    height: 3.1rem;
+    height: 50px;
     background-color: #eaeaea;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     
     &_paris {
         @include family-Roboto;
-        font-size: 0.75rem;
+        font-size: 1rem;
+        padding-right: 135px;
     }
 }
 
 .fas.fa-map-marker-alt {
     font-size: 1rem;
+    padding-left: 104px;
+}
+
+.btn_pink {
+    height: 50px;
+    /*width: max-content;
+    margin-inline: auto;*/
+    margin-left: 82px;
+    margin-right: 75px;
+    font-weight: bold;
+    color: $background-title;
+    border: none;
+    border-radius: 30PX;
+    background: rgb(241,132,220);
+    background: linear-gradient(174deg, rgba(241,132,220,1) 0%, rgba(176,95,219,1) 100%);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
 .booking {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
+    @include family-Roboto;
     &_title {
-        font-size: 1.1rem;
-        text-align: center;
-        padding-top: 1.1rem;
-        padding-left: 4rem;
-        padding-right: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    padding-top: 37px;
+    padding-left: 58px;
+    padding-right: 65px;
+    /*@include family-Roboto;*/
     }
     &_selection {
         font-size: 1rem;
-        margin-top: 20px;
+        margin-top: 12px;
         text-align: center;
     }
     &_btn {
-        margin-top: 30px;
-        margin-bottom: 55px;
-        padding-left: 20px;
-        padding-right: 20px; 
-        @include btn-degraded;
+        margin-top: 34px;
+        margin-bottom: 55px; 
+        /*@include btn-degraded;*/
+    }
+    &_span{
+        font-size: 1rem;
     }
 }
 
@@ -71,10 +91,12 @@ header {
     display: flex;
     flex-flow: column wrap;
     background-color: $background-title;
+    @include family-Roboto;
     &_title {
-        margin-top: 50px;
-        margin-left: 20px;
-        font-size: 18px;
+        margin-top: 51px;
+        margin-left: 10px;
+        font-size: 1.5rem;
+        transform: scale(0.95);
     }
     &_bloc {
         display: flex;
@@ -97,10 +119,11 @@ header {
 .restaurant {
     display: flex;
     flex-flow: column wrap;
+    @include family-Roboto;
     &_title {
-        margin-top: 50px;
-        margin-left: 20px;
-        font-size: 18px;
+        margin-top: 45px;
+        margin-left: 19px;
+        font-size: 1.6rem;
     }
     &_bloc {
         display: flex;

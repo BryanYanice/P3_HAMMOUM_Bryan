@@ -28,46 +28,29 @@ header {
 
 .position {
   width: 100%;
-  height: 3.1rem;
+  height: 50px;
   background-color: #eaeaea;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .position_paris {
   font-family: "Roboto", sans-serif;
-  font-size: 0.75rem;
+  font-size: 1rem;
+  padding-right: 135px;
 }
 
 .fas.fa-map-marker-alt {
   font-size: 1rem;
+  padding-left: 104px;
 }
 
-.booking {
-  width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-}
-.booking_title {
-  font-size: 1.1rem;
-  text-align: center;
-  padding-top: 1.1rem;
-  padding-left: 4rem;
-  padding-right: 5rem;
-}
-.booking_selection {
-  font-size: 1rem;
-  margin-top: 20px;
-  text-align: center;
-}
-.booking_btn {
-  margin-top: 30px;
-  margin-bottom: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
+.btn_pink {
   height: 50px;
-  width: max-content;
-  margin-inline: auto;
+  /*width: max-content;
+  margin-inline: auto;*/
+  margin-left: 82px;
+  margin-right: 75px;
   font-weight: bold;
   color: #ffff;
   border: none;
@@ -77,15 +60,45 @@ header {
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
+.booking {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: "Roboto", sans-serif;
+}
+.booking_title {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-top: 37px;
+  padding-left: 58px;
+  padding-right: 65px;
+  /*@include family-Roboto;*/
+}
+.booking_selection {
+  font-size: 1rem;
+  margin-top: 12px;
+  text-align: center;
+}
+.booking_btn {
+  margin-top: 34px;
+  margin-bottom: 55px;
+  /*@include btn-degraded;*/
+}
+.booking_span {
+  font-size: 1rem;
+}
+
 .operation {
   display: flex;
   flex-flow: column wrap;
   background-color: #ffff;
+  font-family: "Roboto", sans-serif;
 }
 .operation_title {
-  margin-top: 50px;
-  margin-left: 20px;
-  font-size: 18px;
+  margin-top: 51px;
+  margin-left: 10px;
+  font-size: 1.5rem;
+  transform: scale(0.95);
 }
 .operation_bloc {
   display: flex;
@@ -107,11 +120,12 @@ header {
 .restaurant {
   display: flex;
   flex-flow: column wrap;
+  font-family: "Roboto", sans-serif;
 }
 .restaurant_title {
-  margin-top: 50px;
-  margin-left: 20px;
-  font-size: 18px;
+  margin-top: 45px;
+  margin-left: 19px;
+  font-size: 1.6rem;
 }
 .restaurant_bloc {
   display: flex;
