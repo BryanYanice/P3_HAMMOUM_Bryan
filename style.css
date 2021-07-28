@@ -49,8 +49,9 @@ header {
   height: 50px;
   /*width: max-content;
   margin-inline: auto;*/
-  margin-left: 82px;
-  margin-right: 75px;
+  font-size: 1rem;
+  padding: 0 20px;
+  min-width: 180px;
   font-weight: bold;
   color: #ffff;
   border: none;
@@ -64,28 +65,26 @@ header {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
+  align-items: center;
   font-family: "Roboto", sans-serif;
 }
 .booking_title {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
+  padding-top: 39px;
   text-align: center;
-  padding-top: 37px;
-  padding-left: 58px;
-  padding-right: 65px;
+  width: 75%;
   /*@include family-Roboto;*/
 }
 .booking_selection {
   font-size: 1rem;
-  margin-top: 12px;
+  margin-top: 15px;
   text-align: center;
+  width: 95%;
 }
 .booking_btn {
   margin-top: 34px;
   margin-bottom: 55px;
   /*@include btn-degraded;*/
-}
-.booking_span {
-  font-size: 1rem;
 }
 
 .operation {
@@ -95,10 +94,9 @@ header {
   font-family: "Roboto", sans-serif;
 }
 .operation_title {
-  margin-top: 51px;
-  margin-left: 10px;
+  margin-top: 50px;
+  margin-left: 20px;
   font-size: 1.5rem;
-  transform: scale(0.95);
 }
 .operation_bloc {
   display: flex;
@@ -106,15 +104,38 @@ header {
   margin-top: 30px;
   margin-bottom: 45px;
 }
+.operation_btn-bloc {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: baseline;
+}
 .operation_btn {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   height: 75px;
   border: none;
-  margin-left: 35px;
   margin-right: 20px;
   margin-bottom: 25px;
   border-radius: 20px;
+}
+.operation_btn_number {
+  margin-top: -19px;
+  background-color: #9356DC;
+  font-size: 0.9rem;
+  width: 6%;
+  margin-left: 10px;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 3px;
+}
+.operation_btn_number-1 {
+  position: relative;
+  left: 11px;
+}
+.operation_chois {
+  width: 86%;
 }
 
 .restaurant {
