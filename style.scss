@@ -21,7 +21,12 @@ header {
 }
 
 .titles {
-    @include title-Shrikhand;
+    /* @include title-Shrikhand;*/
+    font-family: $family-title;
+    font-size: 1.9rem;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
 }
 
 .position {
@@ -33,7 +38,8 @@ header {
     align-items: center;
     
     &_paris {
-        @include family-Roboto;
+        /*@include family-Roboto;*/
+        font-family: $family-text;
         font-size: 1rem;
         padding-right: 135px;
     }
@@ -65,7 +71,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    @include family-Roboto;
+    font-family: $family-text;
     &_title {
     font-size: 1.5rem;
     padding-top: 39px;
@@ -90,7 +96,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     background-color: $background-title;
-    @include family-Roboto;
+    font-family: $family-text;
     &_title {
         margin-top: 50px;
         margin-left: 20px;
@@ -109,8 +115,9 @@ header {
     }
     &_btn {
         font-size: 1rem;
-        @include family-Roboto;
+        font-family: $family-text;
         height: 75px;
+        width: 86%;
         border: none;
         margin-right: 20px;
         margin-bottom: 25px;
@@ -121,26 +128,24 @@ header {
             font-size: 0.9rem;
             width: 6%;
             margin-left: 10px;
+            position: relative;
+            left: 11px;
             color: #fff;
             text-align: center;
             border: none;
             border-radius: 10px;
             padding: 3px 3px;
-            &-1 {
-                position: relative;
-                left: 11px;
-            }
         }
-    }
-    &_chois {
-        width: 86%;
+        &-icon {
+            color: $color-primary;
+        }
     }
 }
 
 .restaurant {
-    display: flex;
-    flex-flow: column wrap;
-    @include family-Roboto;
+    display: grid;
+    /*flex-flow: column wrap;*/
+    font-family: $family-text;
     &_title {
         margin-top: 45px;
         margin-left: 19px;

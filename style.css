@@ -19,6 +19,7 @@ header {
 }
 
 .titles {
+  /* @include title-Shrikhand;*/
   font-family: "Shrikhand", cursif;
   font-size: 1.9rem;
   padding-top: 12px;
@@ -35,6 +36,7 @@ header {
   align-items: center;
 }
 .position_paris {
+  /*@include family-Roboto;*/
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   padding-right: 135px;
@@ -113,6 +115,7 @@ header {
   font-size: 1rem;
   font-family: "Roboto", sans-serif;
   height: 75px;
+  width: 86%;
   border: none;
   margin-right: 20px;
   margin-bottom: 25px;
@@ -124,23 +127,21 @@ header {
   font-size: 0.9rem;
   width: 6%;
   margin-left: 10px;
+  position: relative;
+  left: 11px;
   color: #fff;
   text-align: center;
   border: none;
   border-radius: 10px;
   padding: 3px 3px;
 }
-.operation_btn_number-1 {
-  position: relative;
-  left: 11px;
-}
-.operation_chois {
-  width: 86%;
+.operation_btn-icon {
+  color: #9356DC;
 }
 
 .restaurant {
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  /*flex-flow: column wrap;*/
   font-family: "Roboto", sans-serif;
 }
 .restaurant_title {
