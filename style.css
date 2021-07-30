@@ -108,7 +108,6 @@ header {
 }
 .operation_btn-bloc {
   display: flex;
-  flex-flow: row nowrap;
   align-items: baseline;
 }
 .operation_btn {
@@ -120,6 +119,9 @@ header {
   margin-right: 20px;
   margin-bottom: 25px;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .operation_btn_number {
   margin-top: -19px;
@@ -135,8 +137,26 @@ header {
   border-radius: 10px;
   padding: 3px 3px;
 }
-.operation_btn-icon {
+.operation_btn .fas.fa-mobile-alt {
+  font-size: 1.2rem;
+}
+.operation_btn .fas.fa-store {
   color: #9356DC;
+}
+.operation_btn-icon {
+  color: #7e7e7e;
+  padding-left: 35px;
+  font-size: 1rem;
+}
+.operation_chois {
+  padding-right: 70px;
+}
+.operation_menu {
+  padding-right: 85px;
+}
+.operation_restaurant {
+  padding-right: 80px;
+  background-color: #f5edff;
 }
 
 .restaurant {

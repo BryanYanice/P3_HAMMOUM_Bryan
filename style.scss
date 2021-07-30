@@ -110,7 +110,6 @@ header {
     }
     &_btn-bloc {
         display: flex;
-        flex-flow: row nowrap;
         align-items: baseline;
     }
     &_btn {
@@ -122,6 +121,9 @@ header {
         margin-right: 20px;
         margin-bottom: 25px;
         border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         &_number {
             margin-top: -19px;
             background-color: $color-primary;
@@ -136,9 +138,27 @@ header {
             border-radius: 10px;
             padding: 3px 3px;
         }
-        &-icon {
+        .fas.fa-mobile-alt {
+            font-size: 1.2rem;
+        } 
+        .fas.fa-store {
             color: $color-primary;
         }
+        &-icon {
+            color: #7e7e7e;
+            padding-left: 35px;
+            font-size: 1rem;
+        }
+    }
+    &_chois {
+        padding-right: 70px;
+    }
+    &_menu {
+        padding-right: 85px;
+    }
+    &_restaurant {
+        padding-right: 80px;
+        background-color: #f5edff;
     }
 }
 
