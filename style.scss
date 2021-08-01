@@ -185,7 +185,7 @@ header {
         background-color: $background-title;
         border-radius: 10px;
         box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
-        overflow: hidden;
+        display: grid;
     }
     &_image {
         height: 175px;
@@ -195,16 +195,36 @@ header {
     }
     &_name {
         font-size: 1.1rem;
-        margin: 10px 0 0 8px;
+        margin: 13px 0 0 8px;
     }
     &_city {
         font-size: 1rem;
-        margin: 5px 0 15px 8px
+        margin: 7px 0 15px 8px
     }
     .far.fa-heart {
         font-size: 1.4rem;
-        margin-left: 180px;
-        bottom: 19px;
+        padding-right: 25px;
         position: relative;
+        bottom: 50px;
+        text-align: right;
+        :hover {
+            background: linear-gradient(174deg, rgba(241,132,220,1) 0%, rgba(176,95,219,1) 100%);
+        }
+    }
+}
+
+.info {
+    background-color: $background-footer;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: $family-text;
+    color: $background-title;
+    margin-top: 60px;
+    &_title {
+        font-family: $family-title;
+        font-size: 1rem;
+        padding: 24px 0 0 25px;
+        width: 10px;
+        letter-spacing: 1px;
     }
 }
