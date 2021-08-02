@@ -199,15 +199,23 @@ header {
   font-size: 1rem;
   margin: 7px 0 15px 8px;
 }
+.restaurant_btn {
+  border: none;
+  width: 10%;
+  justify-self: right;
+  margin-right: 20px;
+  margin-top: -13px;
+  background-color: #ffff;
+}
+.restaurant_btn :hover {
+  background: linear-gradient(174deg, #f184dc 0%, #b05fdb 100%);
+}
 .restaurant .far.fa-heart {
   font-size: 1.4rem;
-  padding-right: 25px;
+  /*padding-right: 25px;
   position: relative;
   bottom: 50px;
-  text-align: right;
-}
-.restaurant .far.fa-heart :hover {
-  background: linear-gradient(174deg, #f184dc 0%, #b05fdb 100%);
+  text-align: right;*/
 }
 
 .info {
@@ -221,9 +229,24 @@ header {
 .info_title {
   font-family: "Shrikhand", cursif;
   font-size: 1rem;
-  padding: 24px 0 0 25px;
+  padding: 25px 0 0 25px;
   width: 10px;
   letter-spacing: 1px;
+}
+.info_list {
+  margin: 17px 0 25px 25px;
+  list-style-type: none;
+}
+.info_list-li {
+  margin-bottom: 12px;
+}
+.info_icon1 {
+  font-size: 0.9rem;
+  padding-right: 10px;
+}
+.info_icon2 {
+  font-size: 0.8rem;
+  padding-right: 6px;
 }
 
 /*# sourceMappingURL=style.css.map */
