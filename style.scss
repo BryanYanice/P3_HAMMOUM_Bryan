@@ -194,6 +194,16 @@ header {
         object-fit: cover;
         object-position: center;
     }
+    &_avis {
+        display: flex;
+        justify-content: space-between;
+    }
+    &_city-name {
+        flex-flow: column wrap;
+    }
+    &_bloc-btn {
+        flex-flow: row;
+    }
     &_name {
         font-size: 1.1rem;
         margin: 13px 0 0 8px;
@@ -206,9 +216,8 @@ header {
     &_btn {
         border: none;
         width: 10%;
-        justify-self: right;
         margin-right: 20px;
-        margin-top: -13px;
+        margin-bottom: 10px;
         background-color: $background-title;
         :active {
             background: linear-gradient(174deg, rgba(241,132,220,1) 0%, rgba(176,95,219,1) 100%);
@@ -241,6 +250,10 @@ header {
     &_list {
         margin: 17px 0 25px 25px;
         list-style-type: none;
+    }
+    &_lien {
+        text-decoration: none;
+        color: $background-title;
     }
     &_list-li {
         margin-bottom: 12px;

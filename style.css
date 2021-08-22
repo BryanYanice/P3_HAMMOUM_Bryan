@@ -193,6 +193,16 @@ header {
   object-fit: cover;
   object-position: center;
 }
+.restaurant_avis {
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant_city-name {
+  flex-flow: column wrap;
+}
+.restaurant_bloc-btn {
+  flex-flow: row;
+}
 .restaurant_name {
   font-size: 1.1rem;
   margin: 13px 0 0 8px;
@@ -204,9 +214,8 @@ header {
 .restaurant_btn {
   border: none;
   width: 10%;
-  justify-self: right;
   margin-right: 20px;
-  margin-top: -13px;
+  margin-bottom: 10px;
   background-color: #ffff;
 }
 .restaurant_btn :active {
@@ -238,6 +247,10 @@ header {
 .info_list {
   margin: 17px 0 25px 25px;
   list-style-type: none;
+}
+.info_lien {
+  text-decoration: none;
+  color: #ffff;
 }
 .info_list-li {
   margin-bottom: 12px;
