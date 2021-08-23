@@ -105,6 +105,11 @@ header {
   margin-top: 30px;
   margin-bottom: 45px;
 }
+@media screen and (min-width: 700px) {
+  .operation_bloc {
+    flex-flow: row wrap;
+  }
+}
 .operation_btn-bloc {
   display: flex;
   align-items: baseline;

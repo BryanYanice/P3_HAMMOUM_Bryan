@@ -105,6 +105,9 @@ header {
         flex-flow: column wrap;
         margin-top: 30px;
         margin-bottom: 45px;
+        @include tablet-only {
+            flex-flow: row wrap;
+        }
     }
     &_btn-bloc {
         display: flex;

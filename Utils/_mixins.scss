@@ -12,7 +12,9 @@
     justify-content: center;
 }
 
-@mixin family-Roboto {
-    font-family: 'Roboto', sans-serif;
+@mixin tablet-only {
+    @media screen and (min-width: map-get($breakpoints, tablet)){
+        @content;
+    }
 }
 
