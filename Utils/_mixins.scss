@@ -18,3 +18,9 @@
     }
 }
 
+@mixin pc-only {
+    @media screen and (min-width: map-get($breakpointspc, pcportable)){
+        @content;
+    }
+}
+
