@@ -99,6 +99,9 @@ header {
         margin-top: 50px;
         margin-left: 20px;
         font-size: 1.5rem;
+        @include pc-only {
+            margin-left: 60px;
+        }
     }
     &_bloc {
         display: flex;
@@ -107,6 +110,10 @@ header {
         margin-bottom: 45px;
         @include tablet-only {
             flex-flow: row wrap;
+            justify-content: center;
+        }
+        @include pc-only {
+            justify-content: space-around;
         }
     }
     &_btn-bloc {
@@ -179,6 +186,9 @@ header {
         margin-top: 45px;
         margin-left: 19px;
         font-size: 1.6rem;
+        @include pc-only {
+            margin-left: 60px;
+        }
     }
     &_bloc {
         display: grid;
@@ -189,7 +199,7 @@ header {
         @include pc-only {
             grid-template-columns: repeat(2, 480px);
             grid-template-rows: repeat(2, 250px);
-            justify-content: space-between;
+            justify-content: space-around;
         }
     }
     &_proposed {
