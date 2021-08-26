@@ -99,7 +99,7 @@ header {
         margin-top: 50px;
         margin-left: 20px;
         font-size: 1.5rem;
-        @include pc-only {
+        @include tablet-only {
             margin-left: 60px;
         }
     }
@@ -186,7 +186,7 @@ header {
         margin-top: 45px;
         margin-left: 19px;
         font-size: 1.6rem;
-        @include pc-only {
+        @include tablet-only {
             margin-left: 60px;
         }
     }
@@ -196,10 +196,11 @@ header {
         grid-template-rows: repeat(4, 250px);
         grid-row-gap: 20px;
         margin: 20px 20px 20px 25px;
-        @include pc-only {
-            grid-template-columns: repeat(2, 480px);
+        @include tablet-only {
+            grid-template-columns: repeat(2, auto);
             grid-template-rows: repeat(2, 250px);
-            justify-content: space-around;
+            grid-gap: 50px;
+            margin: 20px 60px 20px 60px;
         }
     }
     &_proposed {
@@ -268,13 +269,19 @@ header {
     &_title {
         font-family: $family-title;
         font-size: 1rem;
-        padding: 25px 0 0 25px;
+        margin: 25px 0 0 25px;
         width: 10px;
         letter-spacing: 1px;
+        @include tablet-only {
+            margin-left: 60px;
+        }
     }
     &_list {
         margin: 17px 0 25px 25px;
         list-style-type: none;
+        @include tablet-only {
+            margin-left: 60px;
+        }
     }
     &_lien {
         text-decoration: none;
