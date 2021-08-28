@@ -20,11 +20,28 @@ header {
 
 .titles {
   /* @include title-Shrikhand;*/
+  /*font-family: $family-title;
+  font-size: 1.9rem;
+  padding-top: 12px;*/
+  display: flex;
+  justify-content: center;
+}
+.titles_site {
   font-family: "Shrikhand", cursif;
   font-size: 1.9rem;
   padding-top: 12px;
-  display: flex;
-  justify-content: center;
+}
+.titles_palette {
+  align-items: center;
+  justify-content: space-between;
+}
+.titles .fas.fa-arrow-left {
+  color: black;
+  padding-left: 23px;
+}
+.titles_gout {
+  padding-top: 0px;
+  padding-right: 105px;
 }
 
 .position {
@@ -223,6 +240,7 @@ header {
   border-radius: 10px;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.05);
   display: grid;
+  text-decoration: none;
 }
 .restaurant_image {
   height: 175px;
@@ -245,10 +263,12 @@ header {
 .restaurant_name {
   font-size: 1.1rem;
   margin: 13px 0 0 8px;
+  color: black;
 }
 .restaurant_city {
   font-size: 1rem;
   margin: 7px 0 15px 8px;
+  color: black;
 }
 .restaurant_btn {
   border: none;
@@ -311,6 +331,14 @@ header {
 .info_icon2 {
   font-size: 0.8rem;
   padding-right: 6px;
+}
+
+.picture {
+  height: 260px;
+}
+.picture_palette {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
