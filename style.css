@@ -344,6 +344,24 @@ header {
 .palette {
   display: flex;
   flex-flow: row wrap;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  position: relative;
+  bottom: 47px;
+  background: #f6f6f7;
+  justify-content: space-between;
+}
+.palette .title_carte {
+  font-family: "Shrikhand", cursif;
+  font-size: 1.8rem;
+  padding-top: 40px;
+  padding-left: 20px;
+  letter-spacing: -1px;
+}
+.palette_heart {
+  padding-top: 48px;
+  padding-right: 40px;
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
