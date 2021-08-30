@@ -327,3 +327,8 @@ header {
         height: 100%;
     }
 }
+
+.palette {
+    display: flex;
+    flex-flow: row wrap;
+}
