@@ -349,4 +349,38 @@ header {
         padding-right: 40px;
         font-size: 1.5rem;
     }
+    &_bloc-entrees {
+        margin-top: 35px;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    &_entrees {
+        padding-left: 20px;
+        border-bottom: 3px solid $color-tertiary;
+    }
+    &_btn {
+        margin: 13px 20px 13px 20px;
+        border: none;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        background-color: $background-title;
+        border-radius: 20px 20px 20px 20px;
+    }
+    &_plat {
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    &_recette {
+        font-size: 1.1rem;
+        padding: 8px 0 12px 10px;
+    }
+    &_prix {
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding:10px 23px 0 0;
+    } 
+
 }
