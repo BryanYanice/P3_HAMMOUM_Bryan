@@ -14,6 +14,7 @@ html {
 
 body {
     background-color: $color-fond;
+    font-family: $family-text;
 }
 
 header {
@@ -342,20 +343,22 @@ header {
         font-size: 1.8rem;
         padding-top: 40px;
         padding-left: 20px;
-        letter-spacing: -1px;
+        font-weight: 500;
     }
     &_heart {
         padding-top: 48px;
         padding-right: 40px;
         font-size: 1.5rem;
     }
-    &_bloc-entrees {
+    &_bloc {
         margin-top: 35px;
         display: flex;
         flex-flow: column wrap;
+        width: 100%;
     }
     &_entrees {
-        padding-left: 20px;
+        max-width: 45px;
+        margin-left: 20px;
         border-bottom: 3px solid $color-tertiary;
     }
     &_btn {
