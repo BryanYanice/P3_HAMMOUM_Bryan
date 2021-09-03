@@ -169,9 +169,6 @@ header {
         .fas.fa-mobile-alt {
             font-size: 1.2rem;
         } 
-        .fas.fa-store {
-            color: $color-primary;
-        }
         &-icon {
             color: #7e7e7e;
             padding-left: 35px;
@@ -190,9 +187,13 @@ header {
     }
     &_restaurant {
         padding-right: 80px;
-        background-color: #f5edff;
         @include tablet-only {
             padding-right: 70px;
+        }
+    }
+    &_span {
+        @include tablet-only {
+            margin-left: 15px;
         }
     }
 }

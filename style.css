@@ -175,9 +175,6 @@ header {
 .operation_btn .fas.fa-mobile-alt {
   font-size: 1.2rem;
 }
-.operation_btn .fas.fa-store {
-  color: #9356DC;
-}
 .operation_btn-icon {
   color: #7e7e7e;
   padding-left: 35px;
@@ -196,11 +193,15 @@ header {
 }
 .operation_restaurant {
   padding-right: 80px;
-  background-color: #f5edff;
 }
 @media screen and (min-width: 700px) {
   .operation_restaurant {
     padding-right: 70px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .operation_span {
+    margin-left: 15px;
   }
 }
 
