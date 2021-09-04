@@ -33,18 +33,17 @@ header {
     font-size: 1.9rem;
     padding-top: 12px;
     }
-    &_palette {
-        align-items: center;
-        justify-content: space-between;
+    &_heart {
+        position: relative;
+        position: relative;
+        right: 74px;
+        top: 25px;
     }
     .fas.fa-arrow-left {
         color: black;
-        padding-left: 23px;
+        font-size: 1.1rem;
     }
-    &_gout {
-        padding-top: 0px;
-        padding-right: 105px;
-    }
+    
 }
 
 .position {
@@ -342,25 +341,27 @@ header {
     .title_carte {
         font-family: "Shrikhand", cursif;
         font-size: 1.8rem;
-        padding-top: 40px;
+        padding-top: 36px;
         padding-left: 20px;
         font-weight: 500;
     }
     &_heart {
-        padding-top: 48px;
-        padding-right: 40px;
-        font-size: 1.5rem;
+        padding-top: 45px;
+        padding-right: 38px;
+        font-size: 1.4rem;
     }
     &_bloc {
-        margin-top: 35px;
+        margin-top: 30px;
         display: flex;
         flex-flow: column wrap;
         width: 100%;
     }
     &_entrees {
-        max-width: 45px;
+        max-width: 40px;
+        min-height: 25px;
         margin-left: 20px;
         border-bottom: 3px solid $color-tertiary;
+        font-size: 0.9rem;
     }
     &_btn {
         margin: 13px 20px 13px 20px;
