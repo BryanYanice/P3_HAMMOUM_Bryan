@@ -377,7 +377,7 @@ header {
   font-size: 0.9rem;
 }
 .palette_btn {
-  margin: 13px 20px 13px 20px;
+  margin: 13px 13px 13px 15px;
   border: none;
   display: flex;
   flex-flow: row wrap;
@@ -385,20 +385,27 @@ header {
   background-color: #ffff;
   border-radius: 20px 20px 20px 20px;
 }
+.palette_name {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+}
 .palette_plat {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: bold;
-  padding-top: 15px;
-  padding-left: 10px;
+  padding: 15px 0 0 10px;
 }
 .palette_recette {
-  font-size: 1.1rem;
-  padding: 8px 0 12px 10px;
+  font-size: 0.9rem;
+  padding: 6px 0 12px 9px;
+}
+.palette_price {
+  display: flex;
 }
 .palette_prix {
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: bold;
-  padding: 10px 23px 0 0;
+  padding: 42px 22px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

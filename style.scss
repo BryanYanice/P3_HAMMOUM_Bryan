@@ -364,7 +364,7 @@ header {
         font-size: 0.9rem;
     }
     &_btn {
-        margin: 13px 20px 13px 20px;
+        margin: 13px 13px 13px 15px;
         border: none;
         display: flex;
         flex-flow: row wrap;
@@ -372,20 +372,28 @@ header {
         background-color: $background-title;
         border-radius: 20px 20px 20px 20px;
     }
+    &_name {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+    
     &_plat {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         font-weight: bold;
-        padding-top: 15px;
-        padding-left: 10px;
+        padding: 15px 0 0 10px;
     }
     &_recette {
-        font-size: 1.1rem;
-        padding: 8px 0 12px 10px;
+        font-size: 0.9rem;
+        padding: 6px 0 12px 9px;
+    }
+    &_price {
+        display: flex;
     }
     &_prix {
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         font-weight: bold;
-        padding:10px 23px 0 0;
+        padding: 42px 22px 0 0;
     } 
 
 }
