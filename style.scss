@@ -395,5 +395,17 @@ header {
         font-weight: bold;
         padding: 42px 22px 0 0;
     } 
-
+    &_commander {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    &_pink {
+        margin-top: 32px;
+    }
 }
+
+#info_palette {
+    margin-top: 13px;
+}
+

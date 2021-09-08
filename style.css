@@ -407,5 +407,17 @@ header {
   font-weight: bold;
   padding: 42px 22px 0 0;
 }
+.palette_commander {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.palette_pink {
+  margin-top: 32px;
+}
+
+#info_palette {
+  margin-top: 13px;
+}
 
 /*# sourceMappingURL=style.css.map */
