@@ -338,6 +338,9 @@ header {
     bottom: 47px;
     background: #f6f6f7;
     justify-content: space-between;
+    @include tablet-only {
+        
+    }
     .title_carte {
         font-family: "Shrikhand", cursif;
         font-size: 1.8rem;
@@ -386,6 +389,9 @@ header {
     &_recette {
         font-size: 0.9rem;
         padding: 6px 0 12px 9px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &_price {
         display: flex;

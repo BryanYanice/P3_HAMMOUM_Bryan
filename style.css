@@ -398,6 +398,9 @@ header {
 .palette_recette {
   font-size: 0.9rem;
   padding: 6px 0 12px 9px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .palette_price {
   display: flex;
