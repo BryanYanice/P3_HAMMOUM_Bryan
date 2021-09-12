@@ -35,9 +35,9 @@ header {
     }
     &_heart {
         position: relative;
-        position: relative;
         right: 74px;
         top: 25px;
+        height: 25px;
     }
     .fas.fa-arrow-left {
         color: black;
@@ -388,8 +388,7 @@ header {
     }
     &_name {
         display: flex;
-        flex-flow: column nowrap;
-        align-items: flex-start;
+        flex-flow: row nowrap;
     }
     
     &_plat {
@@ -406,11 +405,14 @@ header {
     }
     &_price {
         display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 100%;
     }
     &_prix {
         font-size: 0.9rem;
         font-weight: bold;
-        padding: 42px 22px 0 0;
+        padding: 6px 22px 0 0;
     } 
     &_commander {
         display: flex;
