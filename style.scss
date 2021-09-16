@@ -38,6 +38,7 @@ header {
         right: 74px;
         top: 25px;
         height: 25px;
+        
     }
     .fas.fa-arrow-left {
         color: black;
@@ -92,7 +93,6 @@ header {
     padding-top: 39px;
     text-align: center;
     width: 75%;
-    /*@include family-Roboto;*/
     }
     &_selection {
         font-size: 1rem;
@@ -103,7 +103,6 @@ header {
     &_btn {
         margin-top: 34px;
         margin-bottom: 55px; 
-        /*@include btn-degraded;*/
     }
 }
 
@@ -326,16 +325,15 @@ header {
     &_palette {
         width: 100%;
         height: 260px;
+        object-fit: cover;
     }
 }
 
 .palette {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     background: #f6f6f7;
-    @include tablet-only {
-        
-    }
+    overflow: hidden;
     &_title {
         display: flex;
         flex-flow: row wrap;
@@ -367,47 +365,46 @@ header {
         }
     }
     &_container {
-        width: 100%;
+        width: auto;
         @include tablet-only {
             display: flex;
             flex-flow: row wrap;
-            justify-content: space-around;
+            justify-content: space-evenly;
         }
     }
     &_bloc {
         margin-top: 30px;
-        display: flex;
-        flex-flow: column wrap;
+        padding: 0 13px;
+        /*display: flex;
+        flex-flow: column wrap;*/
         width: 100%;
         @include tablet-only {
             width: 450px;
         }
     }
     &_entrees {
-        margin-left: 20px;
+        
         font-size: 0.9rem;
     }
     &_border {
         height: 3px;
         width: 40px;
         margin-top: 6px;
-        margin-left: 21px;
+        
         background-color: $color-tertiary;
     }
     &_btn {
-        margin: 13px 13px 13px 15px;
+        margin: 13px 0;
         border: none;
-        display: flex;
+        /*display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-between;*/
         background-color: $background-title;
         border-radius: 20px 20px 20px 20px;
+
+        width: 100%;
+        overflow: hidden;
     }
-    &_name {
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    
     &_plat {
         font-size: 1.1rem;
         font-weight: bold;
@@ -422,9 +419,9 @@ header {
     }
     &_price {
         display: flex;
-        flex-flow: row nowrap;
+        /*flex-flow: row nowrap;*/
         justify-content: space-between;
-        width: 100%;
+        /*width: 100%;*/
     }
     &_prix {
         font-size: 0.9rem;
