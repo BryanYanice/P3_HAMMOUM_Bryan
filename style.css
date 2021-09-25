@@ -26,6 +26,9 @@ header {
   padding-top: 12px;*/
   display: flex;
   justify-content: center;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
 }
 .titles_site {
   font-family: "Shrikhand", cursif;
@@ -138,6 +141,11 @@ header {
 .operation_btn-bloc {
   display: flex;
   align-items: baseline;
+  transition: transform 450ms, background-color 300ms 450ms;
+}
+.operation_btn-bloc:hover {
+  background: #f5edff;
+  transform: scale(1.05);
 }
 .operation_btn {
   font-size: 1rem;

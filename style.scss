@@ -28,6 +28,9 @@ header {
     padding-top: 12px;*/
     display: flex;
     justify-content: center;
+    box-shadow: 0px 3px 5px 0px rgb(0 0 0 / 10%);
+    position: relative;
+    z-index: 1;
     &_site {
     font-family: $family-title;
     font-size: 1.9rem;
@@ -135,6 +138,11 @@ header {
     &_btn-bloc {
         display: flex;
         align-items: baseline;
+        transition: transform 450ms, background-color 300ms 450ms;
+        &:hover {
+            background: $background-btn;
+            transform: scale(1.05);
+        }
     }
     &_btn {
         font-size: 1rem;
