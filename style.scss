@@ -382,8 +382,6 @@ header {
     &_bloc {
         margin-top: 30px;
         padding: 0 13px;
-        /*display: flex;
-        flex-flow: column wrap;*/
         width: 100%;
         @include tablet-only {
             width: 450px;
@@ -400,15 +398,22 @@ header {
         
         background-color: $color-tertiary;
     }
-    &_btn {
+    &_card {
+        display: flex;
+        width: 100%;
+        max-width: 350px; 
         margin: 13px 0;
-        border: none;
-        /*display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;*/
-        background-color: $background-title;
-        border-radius: 20px 20px 20px 20px;
+        background: $background-title;
+        border-radius: 20px;
+        overflow: hidden;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
         box-shadow: 2px 1px 6px 4px rgb(0 0 0 / 6%);
+    }
+    &_btn {
+        border: none;
+        background-color: $background-title;
         width: 100%;
         overflow: hidden;
     }
@@ -416,6 +421,9 @@ header {
         font-size: 1.1rem;
         font-weight: bold;
         padding: 15px 0 0 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
     &_recette {
         font-size: 0.9rem;
@@ -426,15 +434,45 @@ header {
     }
     &_price {
         display: flex;
-        /*flex-flow: row nowrap;*/
         justify-content: space-between;
-        /*width: 100%;*/
+        padding-top: 10px;
     }
     &_prix {
         font-size: 0.9rem;
         font-weight: bold;
         padding: 6px 22px 0 0;
     } 
+    &_checkbox {
+        width: 0;
+        flex-shrink: 0;
+        background-color: $color-tertiary;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    &_custom {
+        height: 30px;
+        width: 30px;
+        margin: 0;
+        opacity: 0;
+    }
+    &_checkbox-icon {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        pointer-events: none;
+        border-radius: 50%;
+        border: 2px solid $background-title;
+        text-align: center;
+        line-height: 30px;
+        transition: all 0.1s ease-in-out;
+    }
     &_commander {
         display: flex;
         width: 100%;
@@ -444,4 +482,20 @@ header {
     &_pink {
         margin-top: 32px;
     }
+}
+
+.palette_checkbox .palette_checkbox-icon::before {
+    content: '✓';
+    color: $background-title;
+    font-weight: bold;
+    transition: all 0.1s ease-in-out;
+}
+.palette_checkbox .palette_custom:checked ~ .palette_checkbox-icon {
+    background-color: $background-title;
+}
+.palette_checkbox .palette_custom:checked ~ .palette_checkbox-icon::before {
+    color: $color-tertiary;
+}
+.palette_card:hover .palette_checkbox {
+    width: 75px;
 }

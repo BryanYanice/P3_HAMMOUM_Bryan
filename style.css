@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -402,8 +403,6 @@ header {
 .palette_bloc {
   margin-top: 30px;
   padding: 0 13px;
-  /*display: flex;
-  flex-flow: column wrap;*/
   width: 100%;
 }
 @media screen and (min-width: 700px) {
@@ -420,15 +419,22 @@ header {
   margin-top: 6px;
   background-color: #99E2D0;
 }
-.palette_btn {
+.palette_card {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
   margin: 13px 0;
-  border: none;
-  /*display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;*/
-  background-color: #ffff;
-  border-radius: 20px 20px 20px 20px;
+  background: #ffff;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
   box-shadow: 2px 1px 6px 4px rgba(0, 0, 0, 0.06);
+}
+.palette_btn {
+  border: none;
+  background-color: #ffff;
   width: 100%;
   overflow: hidden;
 }
@@ -436,6 +442,9 @@ header {
   font-size: 1.1rem;
   font-weight: bold;
   padding: 15px 0 0 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .palette_recette {
   font-size: 0.9rem;
@@ -446,14 +455,44 @@ header {
 }
 .palette_price {
   display: flex;
-  /*flex-flow: row nowrap;*/
   justify-content: space-between;
-  /*width: 100%;*/
+  padding-top: 10px;
 }
 .palette_prix {
   font-size: 0.9rem;
   font-weight: bold;
   padding: 6px 22px 0 0;
+}
+.palette_checkbox {
+  width: 0;
+  flex-shrink: 0;
+  background-color: #99E2D0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.palette_custom {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+  opacity: 0;
+}
+.palette_checkbox-icon {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+  text-align: center;
+  line-height: 30px;
+  transition: all 0.1s ease-in-out;
 }
 .palette_commander {
   display: flex;
@@ -463,6 +502,25 @@ header {
 }
 .palette_pink {
   margin-top: 32px;
+}
+
+.palette_checkbox .palette_checkbox-icon::before {
+  content: "✓";
+  color: #ffff;
+  font-weight: bold;
+  transition: all 0.1s ease-in-out;
+}
+
+.palette_checkbox .palette_custom:checked ~ .palette_checkbox-icon {
+  background-color: #ffff;
+}
+
+.palette_checkbox .palette_custom:checked ~ .palette_checkbox-icon::before {
+  color: #99E2D0;
+}
+
+.palette_card:hover .palette_checkbox {
+  width: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */
