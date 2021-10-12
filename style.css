@@ -422,7 +422,6 @@ header {
 .palette_card {
   display: flex;
   width: 100%;
-  max-width: 350px;
   margin: 13px 0;
   background: #ffff;
   border-radius: 20px;
