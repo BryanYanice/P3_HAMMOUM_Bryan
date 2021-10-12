@@ -249,6 +249,10 @@ header {
   display: grid;
   text-decoration: none;
 }
+.restaurant_proposed_hover {
+  transform: scale(1.5);
+  transition: 400ms;
+}
 .restaurant_image {
   height: 175px;
   width: 100%;
@@ -447,7 +451,7 @@ header {
 }
 .palette_recette {
   font-size: 0.9rem;
-  padding: 6px 0 12px 9px;
+  padding: 0 0 12px 9px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -460,7 +464,7 @@ header {
 .palette_prix {
   font-size: 0.9rem;
   font-weight: bold;
-  padding: 6px 22px 0 0;
+  padding: 0 22px 0 0;
 }
 .palette_checkbox {
   width: 0;

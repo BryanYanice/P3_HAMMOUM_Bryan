@@ -237,6 +237,10 @@ header {
         box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 5%);
         display: grid;
         text-decoration: none;
+        &_hover {
+            transform: scale(1.5);
+            transition: 400ms;
+        }
     }
     &_image {
         height: 175px;
@@ -424,7 +428,7 @@ header {
     }
     &_recette {
         font-size: 0.9rem;
-        padding: 6px 0 12px 9px;
+        padding: 0 0 12px 9px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
@@ -437,7 +441,7 @@ header {
     &_prix {
         font-size: 0.9rem;
         font-weight: bold;
-        padding: 6px 22px 0 0;
+        padding: 0 22px 0 0;
     } 
     &_checkbox {
         width: 0;
