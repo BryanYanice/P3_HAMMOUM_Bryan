@@ -138,11 +138,6 @@ header {
     &_btn-bloc {
         display: flex;
         align-items: baseline;
-        transition: transform 450ms, background-color 300ms 450ms;
-        &:hover {
-            background: $background-btn;
-            transform: scale(1.05);
-        }
     }
     &_btn {
         font-size: 1rem;
@@ -157,6 +152,10 @@ header {
         align-items: center;
         justify-content: space-between;
         box-shadow: 0px 5px 5px 0px rgb(0 0 0 / 10%);
+        animation-name: anim;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
         &_number {
             margin-top: -19px;
             background-color: $color-primary;
@@ -174,6 +173,7 @@ header {
         }
         .fas.fa-mobile-alt {
             font-size: 1.2rem;
+            animation-name: anim;
         } 
         &-icon {
             color: #7e7e7e;
@@ -183,16 +183,18 @@ header {
     }
     &_chois {
         padding-right: 70px;
-        
+        animation-delay: 2s;
     }
     &_menu {
         padding-right: 85px;
+        animation-delay: 5s;
         @include tablet-only {
             padding-right: 70px;
         }
     }
     &_restaurant {
         padding-right: 80px;
+        animation-delay: 8s;
         @include tablet-only {
             padding-right: 70px;
         }
@@ -201,6 +203,24 @@ header {
         @include tablet-only {
             margin-left: 15px;
         }
+    }
+}
+
+@keyframes anim {
+    0% {
+        transform: scale(1);
+    }
+    12% {
+        transform: scale(1.05);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    41% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -392,14 +412,21 @@ header {
         }
     }
     &_entrees {
-        
         font-size: 0.9rem;
+        &::after {
+            content: '';
+            display: block;
+            height: 3px;
+            width: 40px;
+            margin-top: 6px;
+            background-color: #99E2D0;
+        }
     }
-    &_border {
+    /*&_border {
         height: 3px;
         width: 40px;
         margin-top: 6px; background-color: $color-tertiary;
-    }
+    }*/
     &_card {
         display: flex;
         width: 100%; 

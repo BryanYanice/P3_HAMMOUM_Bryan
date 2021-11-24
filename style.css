@@ -142,11 +142,6 @@ header {
 .operation_btn-bloc {
   display: flex;
   align-items: baseline;
-  transition: transform 450ms, background-color 300ms 450ms;
-}
-.operation_btn-bloc:hover {
-  background: #f5edff;
-  transform: scale(1.05);
 }
 .operation_btn {
   font-size: 1rem;
@@ -161,6 +156,10 @@ header {
   align-items: center;
   justify-content: space-between;
   box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+  animation-name: anim;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .operation_btn_number {
   margin-top: -19px;
@@ -179,6 +178,7 @@ header {
 }
 .operation_btn .fas.fa-mobile-alt {
   font-size: 1.2rem;
+  animation-name: anim;
 }
 .operation_btn-icon {
   color: #7e7e7e;
@@ -187,9 +187,11 @@ header {
 }
 .operation_chois {
   padding-right: 70px;
+  animation-delay: 2s;
 }
 .operation_menu {
   padding-right: 85px;
+  animation-delay: 5s;
 }
 @media screen and (min-width: 700px) {
   .operation_menu {
@@ -198,6 +200,7 @@ header {
 }
 .operation_restaurant {
   padding-right: 80px;
+  animation-delay: 8s;
 }
 @media screen and (min-width: 700px) {
   .operation_restaurant {
@@ -210,6 +213,23 @@ header {
   }
 }
 
+@keyframes anim {
+  0% {
+    transform: scale(1);
+  }
+  12% {
+    transform: scale(1.05);
+  }
+  25% {
+    transform: scale(1.05);
+  }
+  41% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .restaurant {
   /*flex-flow: column wrap;*/
   font-family: "Roboto", sans-serif;
@@ -357,6 +377,11 @@ header {
   flex-flow: column nowrap;
   background: #f6f6f7;
   overflow: hidden;
+  /*&_border {
+      height: 3px;
+      width: 40px;
+      margin-top: 6px; background-color: $color-tertiary;
+  }*/
 }
 .palette_title {
   display: flex;
@@ -417,7 +442,9 @@ header {
 .palette_entrees {
   font-size: 0.9rem;
 }
-.palette_border {
+.palette_entrees::after {
+  content: "";
+  display: block;
   height: 3px;
   width: 40px;
   margin-top: 6px;
