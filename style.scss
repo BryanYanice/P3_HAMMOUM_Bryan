@@ -214,18 +214,23 @@ header {
 @keyframes anim {
     0% {
         transform: scale(1);
+        /*background-color: $background-btn;*/
     }
     12% {
         transform: scale(1.05);
+        background-color: $background-btn;
     }
     25% {
         transform: scale(1.05);
+        background-color: $background-btn;
     }
     41% {
         transform: scale(1);
+        /*background-color: $background-btn;*/
     }
     100% {
         transform: scale(1);
+        /*background-color: $background-btn;*/
     }
 }
 
