@@ -138,6 +138,7 @@ header {
     &_btn-bloc {
         display: flex;
         align-items: baseline;
+        justify-content: center; /*test*/
     }
     &_btn {
         font-size: 1rem;
@@ -145,7 +146,7 @@ header {
         height: 75px;
         width: 86%;
         border: none;
-        margin-right: 20px;
+        /*margin-right: 20px;test*/
         margin-bottom: 25px;
         border-radius: 20px;
         display: flex;
@@ -157,19 +158,23 @@ header {
         animation-iteration-count: infinite;
         animation-timing-function: linear;
         &_number {
-            margin-top: -19px;
+            /*margin-top: -19px;test*/
             background-color: $color-primary;
             font-size: 0.9rem;
             width: 23px;
             height: 23px;
-            margin-left: 10px;
+            /*margin-left: 10px;test*/
             position: relative;
-            left: 11px;
+            /*left: 11px;test*/
+            left: -10px;
             color: #fff;
             text-align: center;
             border: none;
             border-radius: 50%;
             padding: 3px 3px;
+            @include tablet-only {
+                width: 27px;
+            }
         }
         .fas.fa-mobile-alt {
             font-size: 1.2rem;
@@ -177,7 +182,7 @@ header {
         } 
         &-icon {
             color: #7e7e7e;
-            padding-left: 35px;
+            /*padding-left: 35px;test*/
             font-size: 1rem;
         }
     }
